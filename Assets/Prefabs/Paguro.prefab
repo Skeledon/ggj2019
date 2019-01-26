@@ -93,9 +93,10 @@ GameObject:
   - component: {fileID: 6275688984073696245}
   - component: {fileID: 6275688984073696246}
   - component: {fileID: 6275688984073696247}
+  - component: {fileID: 8720401537475374731}
   m_Layer: 10
   m_Name: Aneomone AttackBox
-  m_TagString: Untagged
+  m_TagString: PlayerDamage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,7 +125,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -201,6 +202,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeUntilDeactivation: 0.5
+--- !u!114 &8720401537475374731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6275688984073696240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7032ce9d7f32151429d577c93a6d2825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DamageValue: -10
+  HitEnemyHittable: 1
+  HitPlayerHittable: 0
+  myHP: {fileID: 6275688984771330423}
 --- !u!1 &6275688984771330428
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,9 +231,10 @@ GameObject:
   - component: {fileID: 6275688984771330417}
   - component: {fileID: 6275688984771330423}
   - component: {fileID: 6275688984771330416}
+  - component: {fileID: 238610612857342704}
   m_Layer: 8
   m_Name: Anemone
-  m_TagString: Untagged
+  m_TagString: PlayerHittable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -311,7 +329,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxValue: 100
+  EatValue: 0
   InvulnerabilityFrame: 1
+  myRenderer: {fileID: 0}
+  ObjectToDestroy: {fileID: 6275688985167378320}
 --- !u!61 &6275688984771330416
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -338,6 +359,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &238610612857342704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6275688984771330428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf92a4d92c9142346adb56c871958674, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeBetweenDecays: 1
+  DecayAmount: -1
 --- !u!1 &6275688985167378320
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,10 +387,11 @@ GameObject:
   - component: {fileID: 6275688985167378283}
   - component: {fileID: 6275688985167378281}
   - component: {fileID: 6275688985167378282}
+  - component: {fileID: 1460038362044427754}
   - component: {fileID: 6275688985167378325}
   m_Layer: 8
   m_Name: Paguro
-  m_TagString: Untagged
+  m_TagString: PlayerHittable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -469,6 +505,20 @@ MonoBehaviour:
   myPaguroAttack: {fileID: 6275688985167378281}
   myAnemoneAttack: {fileID: 6275688984771330417}
   PlayerID: 0
+--- !u!114 &1460038362044427754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6275688985167378320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf92a4d92c9142346adb56c871958674, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeBetweenDecays: 1
+  DecayAmount: -1
 --- !u!114 &6275688985167378325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -482,7 +532,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxValue: 100
+  EatValue: 0
   InvulnerabilityFrame: 1
+  myRenderer: {fileID: 6275688983969537281}
+  ObjectToDestroy: {fileID: 0}
 --- !u!1 &6275688985284486143
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,9 +548,10 @@ GameObject:
   - component: {fileID: 6275688985284486140}
   - component: {fileID: 6275688985284486141}
   - component: {fileID: 6275688985284486131}
+  - component: {fileID: 3135525276627565633}
   m_Layer: 10
   m_Name: Paguro AttackBox
-  m_TagString: Untagged
+  m_TagString: PlayerDamage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -526,7 +580,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -603,3 +657,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeUntilDeactivation: 0.5
+--- !u!114 &3135525276627565633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6275688985284486143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7032ce9d7f32151429d577c93a6d2825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DamageValue: -10
+  HitEnemyHittable: 1
+  HitPlayerHittable: 0
+  myHP: {fileID: 6275688985167378325}

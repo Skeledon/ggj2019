@@ -28,9 +28,17 @@ public class PaguroMovement : MonoBehaviour
     {
         if (jumpEnabled)
         {
+            myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, 0);
             myRigidBody.AddForce(transform.up * JumpForce * direction, ForceMode2D.Impulse);
             StartCoroutine(WaitForNextJump());
         }
+    }
+
+    public void InterruptJump()
+    {
+
+            myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, myRigidBody.velocity.y / 2);
+
     }
 
     public void Move(float direction)

@@ -28,6 +28,8 @@ public class PlayerInput : MonoBehaviour
             myPaguroAttack.Attack();
         if (myRewiredPlayer.GetButtonDown("Eat"))
             myAnemoneAttack.Attack();
+        if (myRewiredPlayer.GetButtonUp("Jump"))
+            myPaguroMovement.InterruptJump();
 
 
         myPaguroMovement.Move(myRewiredPlayer.GetAxis("Horizontal"));

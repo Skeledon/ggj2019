@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6831192025499720792}
   - component: {fileID: 4775305066835409761}
+  - component: {fileID: 6375894478651040218}
   m_Layer: 9
   m_Name: ThreatObject
-  m_TagString: Untagged
+  m_TagString: EnemyDamage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57,6 +58,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6375894478651040218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935422604978217176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7032ce9d7f32151429d577c93a6d2825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DamageValue: -6
+  HitEnemyHittable: 0
+  HitPlayerHittable: 1
+  myHP: {fileID: 0}
 --- !u!1 &7757331773072926571
 GameObject:
   m_ObjectHideFlags: 0
@@ -69,11 +86,10 @@ GameObject:
   - component: {fileID: 7757331773072926566}
   - component: {fileID: 7757331773072926567}
   - component: {fileID: 7757331773072926568}
-  - component: {fileID: 7757331773072926569}
   - component: {fileID: 7757331773072926570}
   m_Layer: 11
   m_Name: GenericEnemy
-  m_TagString: Untagged
+  m_TagString: EnemyHittable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,6 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxValue: 1
+  EatValue: 10
   InvulnerabilityFrame: 0
 --- !u!61 &7757331773072926568
 BoxCollider2D:
@@ -181,19 +198,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7757331773072926569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7757331773072926571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7032ce9d7f32151429d577c93a6d2825, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DamageValue: -6
 --- !u!50 &7757331773072926570
 Rigidbody2D:
   serializedVersion: 4
