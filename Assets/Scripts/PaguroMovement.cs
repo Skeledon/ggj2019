@@ -44,9 +44,9 @@ public class PaguroMovement : MonoBehaviour
     public void Move(float direction)
     {
         transform.Translate(Vector2.right * direction * SideSpeed * Time.deltaTime);
-        if (direction > 0)
+        if (direction < 0)
             VisualObject.rotation = Quaternion.Euler(0, 0, 0);
-        if(direction < 0)
+        if(direction > 0)
             VisualObject.rotation = Quaternion.Euler(0, 180, 0);
     }
 

@@ -2,19 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AttackBox : MonoBehaviour
+public class ChelaHandler : MonoBehaviour
 {
     public float TimeUntilDeactivation;
-    // Start is called before the first frame update
-    void OnEnable()
-    {
 
-    }
 
-    // Update is called once per frame
-    void Update()
+    public void Attack()
     {
-        
+        StartCoroutine(WaitForDeactivation());
     }
 
     private IEnumerator WaitForDeactivation()
@@ -22,6 +17,4 @@ public class AttackBox : MonoBehaviour
         yield return new WaitForSeconds(TimeUntilDeactivation);
         GetComponent<Collider2D>().enabled = false;
     }
-
-
 }

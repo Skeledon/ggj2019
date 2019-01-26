@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 7757331773072926567}
   - component: {fileID: 7757331773072926568}
   - component: {fileID: 7757331773072926570}
+  - component: {fileID: 7937854528800351334}
   m_Layer: 11
   m_Name: GenericEnemy
   m_TagString: EnemyHittable
@@ -172,6 +173,8 @@ MonoBehaviour:
   MaxValue: 1
   EatValue: 10
   InvulnerabilityFrame: 0
+  myRenderer: {fileID: 0}
+  ObjectToDestroy: {fileID: 0}
 --- !u!61 &7757331773072926568
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -219,3 +222,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7937854528800351334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7757331773072926571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 554660b751d012946a3356bfd6fdcfc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

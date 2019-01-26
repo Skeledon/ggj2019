@@ -1,8 +1,9 @@
 fileFormatVersion: 2
-guid: eeb9df0f6d37aee429b8e4be144f9285
+guid: b2740deb6267391419df2719d18ec939
 TextureImporter:
   fileIDToRecycleName:
-    21300000: pesce palla_0
+    21300000: squalo busto_0
+    21300002: squalo busto_1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -41,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -118,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pesce palla_0
+      name: squalo busto_0
       rect:
         serializedVersion: 2
-        x: 1117
-        y: 467
-        width: 316
-        height: 239
+        x: 217
+        y: 667
+        width: 724
+        height: 315
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,7 +133,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4ec28ac356abea4098ce81a1a0683dc
+      spriteID: 7bb972449f2adc34baa65dd47f5b8b92
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squalo busto_1
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 636
+        width: 5
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 718e97f439b34ee45a99f9c414885a36
       vertices: []
       indices: 
       edges: []
@@ -140,7 +161,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 3c95590f276e41e4d90d9686bc8459ea
+    spriteID: 2d0062d7f8f5f914887573f6227db249
     vertices: []
     indices: 
     edges: []

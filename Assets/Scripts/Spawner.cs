@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject EnemyToSpawn;
+    public GameObject[] EnemiesPrefabs;
     public float TimeBetweenSpawnsMax;
     public float TimeBetweenSpawnsMin;
 
@@ -23,13 +23,13 @@ public class Spawner : MonoBehaviour
     IEnumerator WaitBetweenSpawns()
     {
         yield return new WaitForSeconds(Random.Range(TimeBetweenSpawnsMin, TimeBetweenSpawnsMax));
-        Spawn();
+        Spawn(0);
         StartCoroutine(WaitBetweenSpawns());
     }
 
-    private void Spawn()
+    public void Spawn(int FishIndex)
     {
-        GameObject tmp = Instantiate(EnemyToSpawn, transform.position, Quaternion.identity);
+        GameObject tmp = Instantiate(EnemiesPrefabs[FishIndex], transform.position, Quaternion.identity);
         tmp.GetComponent<GenericMovement>().StartMoving(transform.right);
     }
 }

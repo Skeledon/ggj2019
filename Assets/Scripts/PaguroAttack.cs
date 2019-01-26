@@ -24,7 +24,7 @@ public class PaguroAttack : MonoBehaviour
     {
         if(canAttack)
         {
-            PaguroAttackBox.SetActive(true);
+            PaguroAttackBox.GetComponent<ChelaHandler>().Attack();
             StartCoroutine(AttackCoroutine());
         }
     }
