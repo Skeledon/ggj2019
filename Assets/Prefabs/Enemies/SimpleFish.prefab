@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!95 &1944112568729124741
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5278583256573054136}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f7faa0802945be44d831f91ee7aa0caa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &7606228755558952617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13,6 +32,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 3
+--- !u!114 &8083225048376409064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5278583256573054136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7446a964da90aa247af42f2d7ba87e55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Invert: 1
 --- !u!1001 &2514943341553019859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25,6 +57,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: SimpleFish
       objectReference: {fileID: 0}
+    - target: {fileID: 7757331773072926567, guid: 35b7b3a4bcbfa0542b239f585f6f07b6,
+        type: 3}
+      propertyPath: EatValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7757331773072926566, guid: 35b7b3a4bcbfa0542b239f585f6f07b6,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a580a44f6dc94a94a9db7cf2ed91b4d8,
+        type: 3}
     - target: {fileID: 7757331773072926565, guid: 35b7b3a4bcbfa0542b239f585f6f07b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -80,10 +123,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7757331773072926567, guid: 35b7b3a4bcbfa0542b239f585f6f07b6,
+    - target: {fileID: 7757331773072926568, guid: 35b7b3a4bcbfa0542b239f585f6f07b6,
         type: 3}
-      propertyPath: EatValue
-      value: 5
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 7757331773072926568, guid: 35b7b3a4bcbfa0542b239f585f6f07b6,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 6375894478651040218, guid: 35b7b3a4bcbfa0542b239f585f6f07b6,
         type: 3}

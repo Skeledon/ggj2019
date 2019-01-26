@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 7757331773072926568}
   - component: {fileID: 7757331773072926570}
   - component: {fileID: 7937854528800351334}
+  - component: {fileID: 7661618561085982087}
   m_Layer: 11
   m_Name: GenericEnemy
   m_TagString: EnemyHittable
@@ -234,3 +235,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 554660b751d012946a3356bfd6fdcfc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7661618561085982087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7757331773072926571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3291685983c4344da40b3ac0fa67ab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptableList: {fileID: 11400000, guid: 6913437d8b537e7439e3226496a1bbe0, type: 2}
+  MyType: 0

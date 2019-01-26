@@ -54,7 +54,7 @@ public class SharkPattern : GenericMovement
             dir.Normalize();
             goingVertical = true;
             lockVertical = true;
-            StopCoroutine(coRoute);
+            StopAllCoroutines();
         }
     }
 

@@ -11,7 +11,7 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void OnEnable()
     {
-        StartCoroutine(WaitBetweenSpawns());
+        //StartCoroutine(WaitBetweenSpawns());
     }
 
     // Update is called once per frame

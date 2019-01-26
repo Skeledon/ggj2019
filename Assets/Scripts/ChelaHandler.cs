@@ -10,6 +10,7 @@ public class ChelaHandler : MonoBehaviour
     public void Attack()
     {
         StartCoroutine(WaitForDeactivation());
+        GetComponent<Collider2D>().enabled = true;
     }
 
     private IEnumerator WaitForDeactivation()
