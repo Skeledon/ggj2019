@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    public Spawner[] Pesciolini;
-    public Spawner[] PesciPalla;
-    public Spawner[] Meduse;
-    public Spawner[] Squali;
+
 
     public EnemyList EnemyListScriptable;
-    public float PollTime;
+
 
     public Level[] Levels;
 
@@ -22,11 +19,17 @@ public class SpawnManager : MonoBehaviour
         public float BaseProbabilityIncreaseForEnemyDead;
         public int MaxNumberOfEnemiesOnScreen;
         public float MinNumberOfEnemiesOnScreen;
+        public float PollTime;
 
         public FishSpawnData Pesciolino;
         public FishSpawnData PescePalla;
         public FishSpawnData Medusa;
         public FishSpawnData Squalo;
+
+        public Spawner[] Pesciolini;
+        public Spawner[] PesciPalla;
+        public Spawner[] Meduse;
+        public Spawner[] Squali;
     }
 
     [System.Serializable]
@@ -44,12 +47,18 @@ public class SpawnManager : MonoBehaviour
     {
         currentPoll = 0;
         StartCoroutine(MainPolling());
+        ResetScriptable();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    private void ResetScriptable()
+    {
+        EnemyListScriptable.Reset();
     }
 
     IEnumerator MainPolling()
@@ -63,7 +72,7 @@ public class SpawnManager : MonoBehaviour
                 SpawnFish( CalculateFish());
             }
             currentPoll++;
-            yield return new WaitForSeconds(PollTime);
+            yield return new WaitForSeconds(Levels[CurrentLevel].PollTime);
         }
     }
 
@@ -148,19 +157,20 @@ public class SpawnManager : MonoBehaviour
 
     private void SpawnFish(int n)
     {
+        Level lev = Levels[CurrentLevel];
         switch (n)
         {
             case 0:
-                Pesciolini[Random.Range(0, Pesciolini.Length)].Spawn(n);
+                lev.Pesciolini[Random.Range(0, lev.Pesciolini.Length)].Spawn(n);
                 break;
             case 1:
-                PesciPalla[Random.Range(0, PesciPalla.Length)].Spawn(n);
+                lev.PesciPalla[Random.Range(0, lev.PesciPalla.Length)].Spawn(n);
                 break;
             case 2:
-                Meduse[Random.Range(0, Meduse.Length)].Spawn(n);
+                lev.Meduse[Random.Range(0, lev.Meduse.Length)].Spawn(n);
                 break;
             case 3:
-                Squali[Random.Range(0, Squali.Length)].Spawn(n);
+                lev.Squali[Random.Range(0, lev.Squali.Length)].Spawn(n);
                 break;
             default:
                 break;

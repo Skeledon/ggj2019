@@ -11,7 +11,7 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void OnEnable()
     {
-        //StartCoroutine(WaitBetweenSpawns());
+
     }
 
     // Update is called once per frame
@@ -20,12 +20,7 @@ public class Spawner : MonoBehaviour
         
     }
 
-    IEnumerator WaitBetweenSpawns()
-    {
-        yield return new WaitForSeconds(Random.Range(TimeBetweenSpawnsMin, TimeBetweenSpawnsMax));
-        Spawn(0);
-        StartCoroutine(WaitBetweenSpawns());
-    }
+
 
     public void Spawn(int FishIndex)
     {

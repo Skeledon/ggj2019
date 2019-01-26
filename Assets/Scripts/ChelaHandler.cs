@@ -6,11 +6,14 @@ public class ChelaHandler : MonoBehaviour
 {
     public float TimeUntilDeactivation;
 
+    public Animator myAnimator;
+
 
     public void Attack()
     {
         StartCoroutine(WaitForDeactivation());
         GetComponent<Collider2D>().enabled = true;
+        myAnimator.SetTrigger("Attack");
     }
 
     private IEnumerator WaitForDeactivation()

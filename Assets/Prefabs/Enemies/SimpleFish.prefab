@@ -31,7 +31,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 652aff4c0ddcd4443adb5be2ae767428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3
+  Speed: 2.5
 --- !u!114 &8083225048376409064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,7 +60,7 @@ PrefabInstance:
     - target: {fileID: 7757331773072926567, guid: 35b7b3a4bcbfa0542b239f585f6f07b6,
         type: 3}
       propertyPath: EatValue
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7757331773072926566, guid: 35b7b3a4bcbfa0542b239f585f6f07b6,
         type: 3}
@@ -133,10 +133,30 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7757331773072926568, guid: 35b7b3a4bcbfa0542b239f585f6f07b6,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.046061754
+      objectReference: {fileID: 0}
+    - target: {fileID: 7757331773072926568, guid: 35b7b3a4bcbfa0542b239f585f6f07b6,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.418098
+      objectReference: {fileID: 0}
+    - target: {fileID: 7757331773072926568, guid: 35b7b3a4bcbfa0542b239f585f6f07b6,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.05669135
+      objectReference: {fileID: 0}
+    - target: {fileID: 7757331773072926568, guid: 35b7b3a4bcbfa0542b239f585f6f07b6,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.1133827
+      objectReference: {fileID: 0}
     - target: {fileID: 6375894478651040218, guid: 35b7b3a4bcbfa0542b239f585f6f07b6,
         type: 3}
       propertyPath: DamageValue
-      value: -15
+      value: -20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35b7b3a4bcbfa0542b239f585f6f07b6, type: 3}

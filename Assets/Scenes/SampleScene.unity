@@ -359,7 +359,7 @@ PrefabInstance:
     - target: {fileID: 2564310696790346543, guid: 194e7ac0b04dea84eacfb89f204cde0e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17
+      value: -18
       objectReference: {fileID: 0}
     - target: {fileID: 2564310696790346543, guid: 194e7ac0b04dea84eacfb89f204cde0e,
         type: 3}
@@ -983,31 +983,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &489938508 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6275688985284486143, guid: 6af998c316657f9479c97fa360c14030,
-    type: 3}
-  m_PrefabInstance: {fileID: 6275688985188315371}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &489938509
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489938508}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1102,39 +1077,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnPoint (8)
       objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734090, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000,
-        type: 0}
-    - target: {fileID: 1580701501418734090, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: EnemyToSpawn
-      value: 
-      objectReference: {fileID: 3425386415551738120, guid: e7e60e668dbb55a448b559b960c0cc8d,
-        type: 3}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: TimeBetweenSpawnsMax
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: TimeBetweenSpawnsMin
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: EnemiesPrefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 7230286741963634250, guid: 11a391b57a0402c4ca000b6c1d43d1c0,
-        type: 3}
     - target: {fileID: 1580701501418734089, guid: 68aa98207c37a294b9dc2104973c33f2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1434,39 +1376,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnPoint (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734090, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000,
-        type: 0}
-    - target: {fileID: 1580701501418734090, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: EnemyToSpawn
-      value: 
-      objectReference: {fileID: 3425386415551738120, guid: e7e60e668dbb55a448b559b960c0cc8d,
-        type: 3}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: TimeBetweenSpawnsMax
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: TimeBetweenSpawnsMin
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: EnemiesPrefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 7230286741963634250, guid: 11a391b57a0402c4ca000b6c1d43d1c0,
-        type: 3}
     - target: {fileID: 1580701501418734089, guid: 68aa98207c37a294b9dc2104973c33f2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1475,7 +1384,7 @@ PrefabInstance:
     - target: {fileID: 1580701501418734089, guid: 68aa98207c37a294b9dc2104973c33f2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 1580701501418734089, guid: 68aa98207c37a294b9dc2104973c33f2,
         type: 3}
@@ -1542,39 +1451,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnPoint (9)
       objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734090, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000,
-        type: 0}
-    - target: {fileID: 1580701501418734090, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: EnemyToSpawn
-      value: 
-      objectReference: {fileID: 3425386415551738120, guid: e7e60e668dbb55a448b559b960c0cc8d,
-        type: 3}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: TimeBetweenSpawnsMax
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: TimeBetweenSpawnsMin
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: EnemiesPrefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 7230286741963634250, guid: 11a391b57a0402c4ca000b6c1d43d1c0,
-        type: 3}
     - target: {fileID: 1580701501418734089, guid: 68aa98207c37a294b9dc2104973c33f2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1674,39 +1550,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnPoint (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734090, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000,
-        type: 0}
-    - target: {fileID: 1580701501418734090, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: EnemyToSpawn
-      value: 
-      objectReference: {fileID: 3425386415551738120, guid: e7e60e668dbb55a448b559b960c0cc8d,
-        type: 3}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: TimeBetweenSpawnsMax
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: TimeBetweenSpawnsMin
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: EnemiesPrefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 7230286741963634250, guid: 11a391b57a0402c4ca000b6c1d43d1c0,
-        type: 3}
     - target: {fileID: 1580701501418734089, guid: 68aa98207c37a294b9dc2104973c33f2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1715,7 +1558,7 @@ PrefabInstance:
     - target: {fileID: 1580701501418734089, guid: 68aa98207c37a294b9dc2104973c33f2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 1580701501418734089, guid: 68aa98207c37a294b9dc2104973c33f2,
         type: 3}
@@ -1782,39 +1625,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnPoint (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734090, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000,
-        type: 0}
-    - target: {fileID: 1580701501418734090, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: EnemyToSpawn
-      value: 
-      objectReference: {fileID: 3425386415551738120, guid: e7e60e668dbb55a448b559b960c0cc8d,
-        type: 3}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: TimeBetweenSpawnsMax
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: TimeBetweenSpawnsMin
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: EnemiesPrefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 7230286741963634250, guid: 11a391b57a0402c4ca000b6c1d43d1c0,
-        type: 3}
     - target: {fileID: 1580701501418734089, guid: 68aa98207c37a294b9dc2104973c33f2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2129,39 +1939,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnPoint (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734090, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000,
-        type: 0}
-    - target: {fileID: 1580701501418734090, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: EnemyToSpawn
-      value: 
-      objectReference: {fileID: 3425386415551738120, guid: e7e60e668dbb55a448b559b960c0cc8d,
-        type: 3}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: TimeBetweenSpawnsMax
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: TimeBetweenSpawnsMin
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: EnemiesPrefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 7230286741963634250, guid: 11a391b57a0402c4ca000b6c1d43d1c0,
-        type: 3}
     - target: {fileID: 1580701501418734089, guid: 68aa98207c37a294b9dc2104973c33f2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2528,39 +2305,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnPoint (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734090, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000,
-        type: 0}
-    - target: {fileID: 1580701501418734090, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: EnemyToSpawn
-      value: 
-      objectReference: {fileID: 3425386415551738120, guid: e7e60e668dbb55a448b559b960c0cc8d,
-        type: 3}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: TimeBetweenSpawnsMax
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: TimeBetweenSpawnsMin
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: EnemiesPrefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 7230286741963634250, guid: 11a391b57a0402c4ca000b6c1d43d1c0,
-        type: 3}
     - target: {fileID: 1580701501418734089, guid: 68aa98207c37a294b9dc2104973c33f2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2677,49 +2421,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ba867662c884c418b77c478ff18d4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Pesciolini:
-  - {fileID: 46864432}
-  - {fileID: 1545506458}
-  - {fileID: 25443726}
-  - {fileID: 1664761997}
-  - {fileID: 588343581}
-  - {fileID: 890620615}
-  - {fileID: 1219116927}
-  - {fileID: 343340964}
-  - {fileID: 1776086828}
-  - {fileID: 876257723}
-  PesciPalla:
-  - {fileID: 46864432}
-  - {fileID: 1545506458}
-  - {fileID: 25443726}
-  - {fileID: 1664761997}
-  - {fileID: 588343581}
-  - {fileID: 890620615}
-  - {fileID: 1219116927}
-  - {fileID: 343340964}
-  - {fileID: 1776086828}
-  - {fileID: 876257723}
-  Meduse:
-  - {fileID: 46864432}
-  - {fileID: 25443726}
-  - {fileID: 588343581}
-  - {fileID: 890620615}
-  - {fileID: 343340964}
-  - {fileID: 876257723}
-  Squali:
-  - {fileID: 46864432}
-  - {fileID: 588343581}
-  - {fileID: 890620615}
-  - {fileID: 876257723}
   EnemyListScriptable: {fileID: 11400000, guid: 6913437d8b537e7439e3226496a1bbe0,
     type: 2}
-  PollTime: 0.5
   Levels:
   - BaseSpawnProbability: 0.3
     BaseProbabilityIncreaseEachPoll: 0.05
     BaseProbabilityIncreaseForEnemyDead: 0.1
-    MaxNumberOfEnemiesOnScreen: 5
+    MaxNumberOfEnemiesOnScreen: 6
     MinNumberOfEnemiesOnScreen: 3
+    PollTime: 0.5
     Pesciolino:
       SpawnProbability: 0.25
       MaxNumberOfSameType: 2
@@ -2732,7 +2442,143 @@ MonoBehaviour:
     Squalo:
       SpawnProbability: 0.15
       MaxNumberOfSameType: 1
-  CurrentLevel: 0
+    Pesciolini:
+    - {fileID: 46864432}
+    - {fileID: 1545506458}
+    - {fileID: 25443726}
+    - {fileID: 1664761997}
+    - {fileID: 588343581}
+    - {fileID: 890620615}
+    - {fileID: 1219116927}
+    - {fileID: 343340964}
+    - {fileID: 1776086828}
+    - {fileID: 876257723}
+    PesciPalla:
+    - {fileID: 46864432}
+    - {fileID: 1545506458}
+    - {fileID: 25443726}
+    - {fileID: 1664761997}
+    - {fileID: 588343581}
+    - {fileID: 890620615}
+    - {fileID: 1219116927}
+    - {fileID: 343340964}
+    - {fileID: 1776086828}
+    - {fileID: 876257723}
+    Meduse:
+    - {fileID: 46864432}
+    - {fileID: 25443726}
+    - {fileID: 588343581}
+    - {fileID: 890620615}
+    - {fileID: 343340964}
+    - {fileID: 876257723}
+    Squali:
+    - {fileID: 46864432}
+    - {fileID: 890620615}
+  - BaseSpawnProbability: 0.3
+    BaseProbabilityIncreaseEachPoll: 0.05
+    BaseProbabilityIncreaseForEnemyDead: 0.1
+    MaxNumberOfEnemiesOnScreen: 5
+    MinNumberOfEnemiesOnScreen: 2
+    PollTime: 0.75
+    Pesciolino:
+      SpawnProbability: 0.45
+      MaxNumberOfSameType: 3
+    PescePalla:
+      SpawnProbability: 0.35
+      MaxNumberOfSameType: 2
+    Medusa:
+      SpawnProbability: 0.2
+      MaxNumberOfSameType: 1
+    Squalo:
+      SpawnProbability: 0
+      MaxNumberOfSameType: 0
+    Pesciolini:
+    - {fileID: 46864432}
+    - {fileID: 1545506458}
+    - {fileID: 25443726}
+    - {fileID: 1664761997}
+    - {fileID: 588343581}
+    - {fileID: 890620615}
+    - {fileID: 1219116927}
+    - {fileID: 343340964}
+    - {fileID: 1776086828}
+    - {fileID: 876257723}
+    PesciPalla:
+    - {fileID: 46864432}
+    - {fileID: 1545506458}
+    - {fileID: 25443726}
+    - {fileID: 1664761997}
+    - {fileID: 588343581}
+    - {fileID: 890620615}
+    - {fileID: 1219116927}
+    - {fileID: 343340964}
+    - {fileID: 1776086828}
+    - {fileID: 876257723}
+    Meduse:
+    - {fileID: 46864432}
+    - {fileID: 25443726}
+    - {fileID: 588343581}
+    - {fileID: 890620615}
+    - {fileID: 343340964}
+    - {fileID: 876257723}
+    Squali:
+    - {fileID: 46864432}
+    - {fileID: 588343581}
+    - {fileID: 890620615}
+    - {fileID: 876257723}
+  - BaseSpawnProbability: 0.4
+    BaseProbabilityIncreaseEachPoll: 0.05
+    BaseProbabilityIncreaseForEnemyDead: 0.1
+    MaxNumberOfEnemiesOnScreen: 9
+    MinNumberOfEnemiesOnScreen: 4
+    PollTime: 0.5
+    Pesciolino:
+      SpawnProbability: 0.15
+      MaxNumberOfSameType: 3
+    PescePalla:
+      SpawnProbability: 0.3
+      MaxNumberOfSameType: 4
+    Medusa:
+      SpawnProbability: 0.25
+      MaxNumberOfSameType: 4
+    Squalo:
+      SpawnProbability: 0.3
+      MaxNumberOfSameType: 3
+    Pesciolini:
+    - {fileID: 46864432}
+    - {fileID: 1545506458}
+    - {fileID: 25443726}
+    - {fileID: 1664761997}
+    - {fileID: 588343581}
+    - {fileID: 890620615}
+    - {fileID: 1219116927}
+    - {fileID: 343340964}
+    - {fileID: 1776086828}
+    - {fileID: 876257723}
+    PesciPalla:
+    - {fileID: 46864432}
+    - {fileID: 1545506458}
+    - {fileID: 25443726}
+    - {fileID: 1664761997}
+    - {fileID: 588343581}
+    - {fileID: 890620615}
+    - {fileID: 1219116927}
+    - {fileID: 343340964}
+    - {fileID: 1776086828}
+    - {fileID: 876257723}
+    Meduse:
+    - {fileID: 46864432}
+    - {fileID: 25443726}
+    - {fileID: 588343581}
+    - {fileID: 890620615}
+    - {fileID: 343340964}
+    - {fileID: 876257723}
+    Squali:
+    - {fileID: 46864432}
+    - {fileID: 588343581}
+    - {fileID: 890620615}
+    - {fileID: 876257723}
+  CurrentLevel: 2
 --- !u!114 &1545506458 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
@@ -2757,39 +2603,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnPoint (7)
       objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734090, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000,
-        type: 0}
-    - target: {fileID: 1580701501418734090, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: EnemyToSpawn
-      value: 
-      objectReference: {fileID: 3425386415551738120, guid: e7e60e668dbb55a448b559b960c0cc8d,
-        type: 3}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: TimeBetweenSpawnsMax
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: TimeBetweenSpawnsMin
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: EnemiesPrefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 7230286741963634250, guid: 11a391b57a0402c4ca000b6c1d43d1c0,
-        type: 3}
     - target: {fileID: 1580701501418734089, guid: 68aa98207c37a294b9dc2104973c33f2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2798,7 +2611,7 @@ PrefabInstance:
     - target: {fileID: 1580701501418734089, guid: 68aa98207c37a294b9dc2104973c33f2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2
+      value: -2.25
       objectReference: {fileID: 0}
     - target: {fileID: 1580701501418734089, guid: 68aa98207c37a294b9dc2104973c33f2,
         type: 3}
@@ -3137,39 +2950,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnPoint (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734090, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000,
-        type: 0}
-    - target: {fileID: 1580701501418734090, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: EnemyToSpawn
-      value: 
-      objectReference: {fileID: 3425386415551738120, guid: e7e60e668dbb55a448b559b960c0cc8d,
-        type: 3}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: TimeBetweenSpawnsMax
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: TimeBetweenSpawnsMin
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: EnemiesPrefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 7230286741963634250, guid: 11a391b57a0402c4ca000b6c1d43d1c0,
-        type: 3}
     - target: {fileID: 1580701501418734089, guid: 68aa98207c37a294b9dc2104973c33f2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3178,7 +2958,7 @@ PrefabInstance:
     - target: {fileID: 1580701501418734089, guid: 68aa98207c37a294b9dc2104973c33f2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2
+      value: -2.25
       objectReference: {fileID: 0}
     - target: {fileID: 1580701501418734089, guid: 68aa98207c37a294b9dc2104973c33f2,
         type: 3}
@@ -3245,39 +3025,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnPoint
       objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734090, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000,
-        type: 0}
-    - target: {fileID: 1580701501418734090, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: EnemyToSpawn
-      value: 
-      objectReference: {fileID: 3425386415551738120, guid: e7e60e668dbb55a448b559b960c0cc8d,
-        type: 3}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: TimeBetweenSpawnsMax
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: TimeBetweenSpawnsMin
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580701501418734088, guid: 68aa98207c37a294b9dc2104973c33f2,
-        type: 3}
-      propertyPath: EnemiesPrefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 7230286741963634250, guid: 11a391b57a0402c4ca000b6c1d43d1c0,
-        type: 3}
     - target: {fileID: 1580701501418734089, guid: 68aa98207c37a294b9dc2104973c33f2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3350,7 +3097,7 @@ PrefabInstance:
     - target: {fileID: 2564310696790346543, guid: 194e7ac0b04dea84eacfb89f204cde0e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 2564310696790346543, guid: 194e7ac0b04dea84eacfb89f204cde0e,
         type: 3}
@@ -3471,6 +3218,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5896387189616368903, guid: 6af998c316657f9479c97fa360c14030, type: 3}
+    - target: {fileID: 6275688985167378283, guid: 6af998c316657f9479c97fa360c14030,
+        type: 3}
+      propertyPath: BottomCheck
+      value: 
+      objectReference: {fileID: 1885491496}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6af998c316657f9479c97fa360c14030, type: 3}

@@ -10,6 +10,9 @@ public class PaguroMovement : MonoBehaviour
     public float SideSpeed;
     public float TimeBetweenJumps;
     public Transform VisualObject;
+    public Animator myAnemoneAnimator;
+    public Animator myPaguroAnimator;
+    public Transform BottomCheck;
 
     private bool jumpEnabled;
     // Start is called before the first frame update
@@ -30,6 +33,7 @@ public class PaguroMovement : MonoBehaviour
         {
             myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, 0);
             myRigidBody.AddForce(transform.up * JumpForce * direction, ForceMode2D.Impulse);
+            myAnemoneAnimator.SetTrigger("Jump");
             StartCoroutine(WaitForNextJump());
         }
     }
@@ -43,6 +47,17 @@ public class PaguroMovement : MonoBehaviour
 
     public void Move(float direction)
     {
+        if(Mathf.Abs(direction) > .1)
+        {
+            myPaguroAnimator.SetBool("Walking", true);
+            if(transform.position.y > BottomCheck.position.y + 1)
+                myPaguroAnimator.SetBool("Walking", false);
+
+        }
+        else
+        {
+            myPaguroAnimator.SetBool("Walking", false);
+        }
         transform.Translate(Vector2.right * direction * SideSpeed * Time.deltaTime);
         if (direction < 0)
             VisualObject.rotation = Quaternion.Euler(0, 0, 0);

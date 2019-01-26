@@ -8,14 +8,18 @@ public class HP : MonoBehaviour
     public int MaxValue = 100;
     public int EatValue;
     public float InvulnerabilityFrame;
+    public float FlashingFrame;
     public SpriteRenderer myRenderer;
     public GameObject ObjectToDestroy;
+    public float InitialInvulnerability;
 
     private bool immortal = false;
+    private bool Flashing = false;
 
     private void Start()
     {
         Value = MaxValue;
+        StartCoroutine(WaitForInvulnerability(InitialInvulnerability));
     }
     public int Modify(int val)
     {
@@ -37,19 +41,28 @@ public class HP : MonoBehaviour
                     Destroy(ObjectToDestroy);
                 return EatValue;
             }
-            if(!ignoreInvulnerability)
-                StartCoroutine(WaitForInvulnerability());
+            if (!ignoreInvulnerability)
+            {
+                StartCoroutine(WaitForInvulnerability(InvulnerabilityFrame));
+                StartCoroutine(WaitForEndFlash());
+            }
 
         }
         return 0;
     }
 
-    IEnumerator WaitForInvulnerability()
+    IEnumerator WaitForInvulnerability(float frame)
     {
         immortal = true;
-        StartCoroutine(Flash());
-        yield return new WaitForSeconds(InvulnerabilityFrame);
+        yield return new WaitForSeconds(frame);
         immortal = false;
+    }
+    IEnumerator WaitForEndFlash()
+    {
+        Flashing = true;
+        StartCoroutine(Flash());
+        yield return new WaitForSeconds(FlashingFrame);
+        Flashing = false;
     }
 
     //Parametri Hardcoded per ordine
@@ -61,7 +74,7 @@ public class HP : MonoBehaviour
         float minAlpha = .2f;
         float currentAlpha = maxAlpha;
         float alphaStep = -3f;
-        while(immortal)
+        while(Flashing)
         {
             myRenderer.color += new Color(0, 0, 0, alphaStep * Time.deltaTime);
             if (myRenderer.color.a >= maxAlpha)

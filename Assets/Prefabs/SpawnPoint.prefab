@@ -45,8 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemiesPrefabs:
   - {fileID: 5278583256573054136, guid: 59741357abb0b514fbd2ba2668c4c639, type: 3}
-  - {fileID: 5401590395115073735, guid: 017abe4922bad2b4397ea7067042ebf4, type: 3}
+  - {fileID: 7230286741963634250, guid: 11a391b57a0402c4ca000b6c1d43d1c0, type: 3}
   - {fileID: 2396016361400520868, guid: a3431293887c6a3478b3f827f387aec6, type: 3}
   - {fileID: 3425386415551738120, guid: e7e60e668dbb55a448b559b960c0cc8d, type: 3}
-  TimeBetweenSpawnsMax: 0
-  TimeBetweenSpawnsMin: 0
+  TimeBetweenSpawnsMax: 5
+  TimeBetweenSpawnsMin: 2

@@ -11,4 +11,13 @@ public class EnemyList : ScriptableObject
     public int TotaleSquali;
     
     public int TotalAllFishes { get { return TotaleMeduse + TotalePesciolini + TotalePesciPalla + TotaleSquali; } }
+
+    public void Reset()
+    {
+        TotalePesciolini = 0;
+        TotalePesciPalla = 0;
+        TotaleMeduse = 0;
+        TotaleSquali = 0;
+    }
+
 }

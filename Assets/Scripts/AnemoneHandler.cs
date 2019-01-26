@@ -2,26 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AttackBox : MonoBehaviour
+public class AnemoneHandler : MonoBehaviour
 {
     public float TimeUntilDeactivation;
+    public Transform Pivot;
     // Start is called before the first frame update
     void OnEnable()
     {
-        
+        StartCoroutine(WaitForDeactivation());
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private IEnumerator WaitForDeactivation()
     {
         yield return new WaitForSeconds(TimeUntilDeactivation);
-        GetComponent<Collider2D>().enabled = false;
+        gameObject.SetActive(false);
     }
-
-
 }
