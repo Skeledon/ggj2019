@@ -12,6 +12,9 @@ public class HP : MonoBehaviour
     public SpriteRenderer myRenderer;
     public GameObject ObjectToDestroy;
     public float InitialInvulnerability;
+    public AudioClip Hit;
+    public AudioClip Heal;
+    public AudioSource myAudioSource;
 
     private bool immortal = false;
     private bool Flashing = false;
@@ -32,6 +35,7 @@ public class HP : MonoBehaviour
         if (!immortal || ignoreInvulnerability)
         {
             Value += val;
+
             Value = Mathf.Clamp(Value, 0, MaxValue);
             if (Value == 0)
             {
@@ -43,6 +47,10 @@ public class HP : MonoBehaviour
             }
             if (!ignoreInvulnerability)
             {
+                if (val < 0)
+                    myAudioSource.PlayOneShot(Hit);
+                else
+                    myAudioSource.PlayOneShot(Heal);
                 StartCoroutine(WaitForInvulnerability(InvulnerabilityFrame));
                 StartCoroutine(WaitForEndFlash());
             }

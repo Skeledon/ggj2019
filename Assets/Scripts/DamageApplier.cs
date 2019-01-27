@@ -8,11 +8,13 @@ public class DamageApplier : MonoBehaviour
     public bool HitEnemyHittable;
     public bool HitPlayerHittable;
     public HP myHP;
+    public ScoreHandler myScore;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(myScore)
+            myScore.Reset();
     }
 
     // Update is called once per frame
@@ -30,6 +32,7 @@ public class DamageApplier : MonoBehaviour
             if ( myHP )
             {
                 myHP.Modify(heal, true);
+                myScore.AddScore(heal);
             }
         }
     }

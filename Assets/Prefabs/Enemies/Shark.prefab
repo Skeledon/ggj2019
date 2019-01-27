@@ -350,6 +350,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shark
       objectReference: {fileID: 0}
+    - target: {fileID: 2334616181438999835, guid: 35b7b3a4bcbfa0542b239f585f6f07b6,
+        type: 3}
+      propertyPath: BubbleBoom
+      value: 
+      objectReference: {fileID: 5479691935365672198, guid: fcd8fd9f39ffcc742b56f1202daa646d,
+        type: 3}
     - target: {fileID: 7661618561085982087, guid: 35b7b3a4bcbfa0542b239f585f6f07b6,
         type: 3}
       propertyPath: MyType
@@ -375,6 +381,16 @@ PrefabInstance:
       propertyPath: InitialInvulnerability
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7757331773072926567, guid: 35b7b3a4bcbfa0542b239f585f6f07b6,
+        type: 3}
+      propertyPath: OnDeath
+      value: 
+      objectReference: {fileID: 8300000, guid: 3bdb50336b1d05348b28c05f29db210b, type: 3}
+    - target: {fileID: 7757331773072926567, guid: 35b7b3a4bcbfa0542b239f585f6f07b6,
+        type: 3}
+      propertyPath: myAudioSource
+      value: 
+      objectReference: {fileID: 8487859371681460906}
     - target: {fileID: 7757331773072926566, guid: 35b7b3a4bcbfa0542b239f585f6f07b6,
         type: 3}
       propertyPath: m_Sprite
@@ -526,6 +542,12 @@ GameObject:
 --- !u!4 &3425386415551738118 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7757331773072926565, guid: 35b7b3a4bcbfa0542b239f585f6f07b6,
+    type: 3}
+  m_PrefabInstance: {fileID: 4913144542329575011}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &8487859371681460906 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3595017982889108681, guid: 35b7b3a4bcbfa0542b239f585f6f07b6,
     type: 3}
   m_PrefabInstance: {fileID: 4913144542329575011}
   m_PrefabAsset: {fileID: 0}

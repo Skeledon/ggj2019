@@ -11,6 +11,8 @@ public class SpawnManager : MonoBehaviour
 
     public Level[] Levels;
 
+    public float LevelChangeTime;
+
     [System.Serializable]
     public struct Level
     {
@@ -37,6 +39,7 @@ public class SpawnManager : MonoBehaviour
     {
         public float SpawnProbability;
         public int MaxNumberOfSameType;
+        public bool DontSpawn;
     }
 
     public int CurrentLevel;
@@ -48,17 +51,21 @@ public class SpawnManager : MonoBehaviour
         currentPoll = 0;
         StartCoroutine(MainPolling());
         ResetScriptable();
+        StartCoroutine(LevelChange());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void ResetScriptable()
     {
         EnemyListScriptable.Reset();
+    }
+
+    IEnumerator LevelChange()
+    {
+        yield return new WaitForSeconds(LevelChangeTime);
+        CurrentLevel++;
+        CurrentLevel = Mathf.Clamp(CurrentLevel, 0, 2);
+        StartCoroutine(LevelChange());
     }
 
     IEnumerator MainPolling()
@@ -125,16 +132,23 @@ public class SpawnManager : MonoBehaviour
             percentageModifiers[i] *= countDifferentials[i];
         }
 
-        for(int i = 0; i< 4; i++)
+
+        for (int i = 0; i< 4; i++)
         {
-            for(int j = 0; j < 4; j++)
+
+            for (int j = 0; j < 4; j++)
             {
+
                 if (i == j)
+                {
                     fishes[j] -= percentageModifiers[i];
+                }
                 else
                     fishes[j] += percentageModifiers[i] / 3;
             }
         }
+
+
 
         float rnd = Random.value;
         float currentPerc = 0;
@@ -152,7 +166,7 @@ public class SpawnManager : MonoBehaviour
                 return i;
         }
 
-        return 4;
+        return 5;
     }
 
     private void SpawnFish(int n)
@@ -161,16 +175,24 @@ public class SpawnManager : MonoBehaviour
         switch (n)
         {
             case 0:
-                lev.Pesciolini[Random.Range(0, lev.Pesciolini.Length)].Spawn(n);
+                if(!lev.Pesciolino.DontSpawn)
+                    lev.Pesciolini[Random.Range(0, lev.Pesciolini.Length)].Spawn(n);
                 break;
             case 1:
-                lev.PesciPalla[Random.Range(0, lev.PesciPalla.Length)].Spawn(n);
+                if (!lev.PescePalla.DontSpawn)
+                    lev.PesciPalla[Random.Range(0, lev.PesciPalla.Length)].Spawn(n);
                 break;
             case 2:
-                lev.Meduse[Random.Range(0, lev.Meduse.Length)].Spawn(n);
+                if (!lev.Medusa.DontSpawn)
+                    lev.Meduse[Random.Range(0, lev.Meduse.Length)].Spawn(n);
                 break;
             case 3:
-                lev.Squali[Random.Range(0, lev.Squali.Length)].Spawn(n);
+                if (!lev.Squalo.DontSpawn)
+                {
+                    if (Random.value < .02f)
+                        lev.Squali[Random.Range(0, lev.Squali.Length)].Spawn(n + 1);
+                    lev.Squali[Random.Range(0, lev.Squali.Length)].Spawn(n);
+                }
                 break;
             default:
                 break;
