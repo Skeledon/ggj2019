@@ -25,7 +25,11 @@ public class TimerHandler : MonoBehaviour
         if(CurrentTime <= 0 && !myScore.GameEnded)
         {
             WinScreen.SetActive(true);
-            Paguro.GetComponent<HP>().SetImmortal(true);
+            HP[] hps = Paguro.GetComponentsInChildren<HP>();
+            foreach (HP h in hps)
+            {
+                h.SetImmortal(true);
+            }
         }
     }
 }
