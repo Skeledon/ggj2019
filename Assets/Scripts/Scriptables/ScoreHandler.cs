@@ -7,13 +7,22 @@ public class ScoreHandler : ScriptableObject
 {
     public int Score;
 
+    public bool GameEnded = false;
+
     public void AddScore(int score)
     {
-        Score += score;
+        if(!GameEnded)
+            Score += score;
     }
 
     public void Reset()
     {
         Score = 0;
+        GameEnded = false;
+    }
+
+    public void GameEnding()
+    {
+        GameEnded = true;
     }
 }

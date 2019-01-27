@@ -5,8 +5,11 @@ using UnityEngine;
 public class CreateBubble : MonoBehaviour
 {
     public GameObject BubbleBoom;
+    public ScoreHandler MyScore;
+
     private void OnDestroy()
     {
-        Instantiate(BubbleBoom, transform.position + new Vector3(0,0,-1), Quaternion.identity);
+        if(!MyScore.GameEnded)
+           Instantiate(BubbleBoom, transform.position + new Vector3(0,0,-1), Quaternion.identity);
     }
 }

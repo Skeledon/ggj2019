@@ -176,6 +176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BubbleBoom: {fileID: 4067081452141009808, guid: 2fb90a6e889d4d04a916a00ff446ec41,
     type: 3}
+  MyScore: {fileID: 11400000, guid: 5ba5ed30fcdcd4a4283cca511338f106, type: 2}
 --- !u!114 &7757331773072926567
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -59,6 +59,11 @@ public class HP : MonoBehaviour
         return 0;
     }
 
+    public void SetImmortal(bool val)
+    {
+        immortal = val;
+    }
+
     IEnumerator WaitForInvulnerability(float frame)
     {
         immortal = true;

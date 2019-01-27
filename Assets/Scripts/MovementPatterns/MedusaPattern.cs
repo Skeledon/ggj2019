@@ -16,7 +16,12 @@ public class MedusaPattern : GenericMovement
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        try
+        {
+            player = GameObject.FindGameObjectWithTag("Player").transform;
+        }
+        catch(System.Exception e)
+        { }
         t = transform;
         oldY = t.position.y;
     }
@@ -25,51 +30,53 @@ public class MedusaPattern : GenericMovement
     void Update()
     {
         transform.Translate(dir * Speed * Time.deltaTime, Space.World);
-
-        if (currentState == 0)
+        if (player)
         {
-            if (Mathf.Abs(t.position.x - player.position.x) < DistanceToActivate)
+            if (currentState == 0)
             {
-                if (player.position.y > t.position.y)
+                if (Mathf.Abs(t.position.x - player.position.x) < DistanceToActivate)
                 {
-                    float a = AngleOfAttack * Mathf.Deg2Rad * Mathf.Sign(dir.x) + Vector2.Angle(Vector2.right, dir) * Mathf.Deg2Rad;
-                    dir = new Vector2(Mathf.Cos(a), Mathf.Sin(a));
+                    if (player.position.y > t.position.y)
+                    {
+                        float a = AngleOfAttack * Mathf.Deg2Rad * Mathf.Sign(dir.x) + Vector2.Angle(Vector2.right, dir) * Mathf.Deg2Rad;
+                        dir = new Vector2(Mathf.Cos(a), Mathf.Sin(a));
+                    }
+                    else
+                    {
+                        float a = AngleOfAttack * Mathf.Deg2Rad * -Mathf.Sign(dir.x) + Vector2.Angle(Vector2.right, dir) * Mathf.Deg2Rad;
+                        dir = new Vector2(Mathf.Cos(a), Mathf.Sin(a));
+                    }
+                    targetPosition = player.position.y;
+                    currentState = 1;
                 }
-                else
-                {
-                    float a = AngleOfAttack * Mathf.Deg2Rad * -Mathf.Sign(dir.x) + Vector2.Angle(Vector2.right, dir) * Mathf.Deg2Rad;
-                    dir = new Vector2(Mathf.Cos(a), Mathf.Sin(a));
-                }
-                targetPosition = player.position.y;
-                currentState = 1;
             }
-        }
-        if (currentState == 1 || currentState == 3)
-        {
-            if (Mathf.Abs(t.position.y - targetPosition) <= .3f)
+            if (currentState == 1 || currentState == 3)
             {
-                dir = Vector2.right * Mathf.Sign(dir.x);
-                currentState++;
-                currentState = Mathf.Clamp(currentState, 0, 4);
+                if (Mathf.Abs(t.position.y - targetPosition) <= .3f)
+                {
+                    dir = Vector2.right * Mathf.Sign(dir.x);
+                    currentState++;
+                    currentState = Mathf.Clamp(currentState, 0, 4);
 
+                }
             }
-        }
-        if (currentState == 2)
-        {
-            if (Mathf.Abs(t.position.x - player.position.x) > DistanceToActivate)
+            if (currentState == 2)
             {
-                if (oldY > t.position.y)
+                if (Mathf.Abs(t.position.x - player.position.x) > DistanceToActivate)
                 {
-                    float a = AngleOfAttack * Mathf.Deg2Rad * Mathf.Sign(dir.x) + Vector2.Angle(Vector2.right, dir) * Mathf.Deg2Rad;
-                    dir = new Vector2(Mathf.Cos(a), Mathf.Sin(a));
+                    if (oldY > t.position.y)
+                    {
+                        float a = AngleOfAttack * Mathf.Deg2Rad * Mathf.Sign(dir.x) + Vector2.Angle(Vector2.right, dir) * Mathf.Deg2Rad;
+                        dir = new Vector2(Mathf.Cos(a), Mathf.Sin(a));
+                    }
+                    else
+                    {
+                        float a = AngleOfAttack * Mathf.Deg2Rad * -Mathf.Sign(dir.x) + Vector2.Angle(Vector2.right, dir) * Mathf.Deg2Rad;
+                        dir = new Vector2(Mathf.Cos(a), Mathf.Sin(a));
+                    }
+                    targetPosition = oldY;
+                    currentState = 3;
                 }
-                else
-                {
-                    float a = AngleOfAttack * Mathf.Deg2Rad * -Mathf.Sign(dir.x) + Vector2.Angle(Vector2.right, dir) * Mathf.Deg2Rad;
-                    dir = new Vector2(Mathf.Cos(a), Mathf.Sin(a));
-                }
-                targetPosition = oldY;
-                currentState = 3;
             }
         }
     }
